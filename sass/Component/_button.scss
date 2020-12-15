@@ -1,0 +1,7 @@
+.btn--orange{
+    @include button ($cl-white-0, $cl-orange-1, $cl-orange-1, $fw-bold-0, $cl-orange-1);
+
+}
+.btn--black{
+    @include button ($cl-white-0, $cl-black-2, $cl-black-2, $fw-bold-0, $cl-black-2);
+}

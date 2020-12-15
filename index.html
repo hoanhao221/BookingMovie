@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__section">
+            <div class="header__logo">
+                <img src="./img/web-logo.png" alt="">
+            </div>
+            <div class="header__title">
+                <ul>
+                    <li><a href="#">Lịch Phim</a></li>
+                    <li><a href="#">Cụm Rạp</a></li>
+                    <li><a href="#">Tin Tức</a></li>
+                    <li><a href="#">Ứng Dụng</a></li>
+                </ul>
+            </div>
+            <div class="header__login">
+                <div class="login--name">
+                    <ul>
+
+                        <li><a href=""><img src="./img/avatar.png" alt=""></a></li>
+                        <li><a href="">Đăng Nhập</a></li>
+                    </ul>
+                </div>
+                <div class="login--address">
+                    <ul>
+                        <li><a href="#"><img src="./img/location-header.png" alt=""></a></li>
+                        <li><a href="#">Hồ Chí Minh</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Swiper -->
+    <section id="banner">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide--img">
+                        <img src="./img/bhd-star-59k-ve-ca-tuan-16045660915386.jpg" alt="">
+                        <button type="button" class="slide--button" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide--img">
+                        <img src="./img/bhd-star-59k-ve-ca-tuan-16045660915386.jpg" alt="">
+                        <button type="button" class="slide--button" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide"><img src="./img/bi-mat-cua-gio-sneakshow-16056745070206.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/chong-nguoi-ta-16053546067770.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/dong-gia-1k-ve-khi-mua-ve-qua-tix-16043766276410.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/tiec-trang-mau-blood-moon-party-16021267739246.png" alt=""></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="choose">
+            <div class="menu__choose">
+                <div class="choose__item">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Phim
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose__item">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Rạp
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose__item">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Ngày xem
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose__item">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Suất chiếu
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose__item">
+                    <button class="btn btn-dark"> MUA VÉ NGAY </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- modal slider -->
+    <!-- Modal -->
+    <div class="modal fade modal__main" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe class="modal--video" style="width:100%" src="https://www.youtube.com/embed/pxZC4L-e_9A"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="product">
+        <div class="product__title">
+            <div class="container mt-3">
+                <!-- Nav tabs -->
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="link" data-toggle="tab" href="#home">Đang chiếu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" data-toggle="tab" href="#menu1">Sắp chiếu</a>
+                    </li>
+
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active"><br>
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="item__top">
+                                    <div class="item__img">
+                                        <img src="./img/tiec-trang-mau-blood-moon-party-16016226514166_215x318.png"
+                                            alt="">
+                                        <div class="item__play">
+                                            <button type="button" class="slide--button" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <i class="fa fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="item__title">
+                                        <div class="item__name">
+                                            <span>C18</span>
+                                            <span>Tiệc Trăng Máu - Flood Moon Party(C18)</span>
+                                            <div class="item--minute">100 phút</div>
+                                        </div>
+                                        <div class="item__btn ">
+                                            <button class="w-100 btn--orange">
+                                                Đặt vé
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item__vote">
+                                        <p class="item__vote--number">9.2</p>
+                                        <p class="item__vote--star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="item__bot">
+                                    <div class="item__img">
+                                        <img src="./img/trai-tim-quai-vat-c18-16050651706870_215x318.png" alt="">
+                                        <div class="item__play">
+                                            <button type="button" class="slide--button" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <i class="fa fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                   <div class="item__title">
+                                    <div class="item__name">
+                                        <span>C18</span>
+                                        <span>Trái Tim Quái Vật(C18)</span>
+                                        <div class="item--minute">89 phút</div>
+                                    </div>
+                                    
+                                    <div class="item__btn ">
+                                        <button class="w-100 btn--orange">
+                                            Đặt vé
+                                        </button>
+                                    </div>
+                                   </div>
+                                    <div class="item__vote">
+                                        <p class="item__vote--number">6.9</p>
+                                        <p class="item__vote--star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__top">
+                                    <div class="item__img">
+                                        <img src="./img/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_215x318.png"
+                                            alt="">
+                                        <div class="item__play">
+                                            <button type="button" class="slide--button" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <i class="fa fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item__title">
+                                        <div class="item__name">
+                                            <span style="padding: 0 16px; background-color: #00ac4d;">P</span>
+                                            <span>Gia Đình Croods: Kỷ Nguyên Mới - The Croods</span>
+                                            <div class="item--minute">95 phút</div>
+                                        </div>
+                                        <div class="item__btn ">
+                                            <button class="w-100 btn--orange">
+                                                Đặt vé
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item__vote">
+                                        <p class="item__vote--number">8.9</p>
+                                        <p class="item__vote--star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item__bot">
+                                    <div class="item__img">
+                                        <img src="./img/sai-gon-trong-con-mua-saigon-in-the-rain-c16-16018703546576_215x318.png"
+                                            alt="">
+                                        <div class="item__play">
+                                            <button type="button" class="slide--button" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <i class="fa fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                   <div class="item__title">
+                                    <div class="item__name">
+                                        <span>C16</span>
+                                        <span>Sài Gòn Trong Mưa - SaiGon In The Rain(C16)</span>
+                                        <div class="item--minute">105 phút</div>
+                                    </div>
+                                   
+                                    <div class="item__btn ">
+                                        <button class="w-100 btn--orange">
+                                            Đặt vé
+                                        </button>
+                                    </div>
+                                   </div>
+                                    <div class="item__vote">
+                                        <p class="item__vote--number">8.6</p>
+                                        <p class="item__vote--star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__top">
+                                    <div class="item__img">
+                                        <img src="./img/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png"
+                                            alt="">
+                                        <div class="item__play">
+                                            <button type="button" class="slide--button" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <i class="fa fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item__title">
+                                        <div class="item__name">
+                                            <span>C16</span>
+                                            <span>Bí Mật Của Gió - Secrets of the Wind (C16)</span>
+                                            <div class="item--minute">95 phút</div>
+                                        </div>
+                                        <div class="item__btn ">
+                                            <button class="w-100 btn--orange">
+                                                Đặt vé
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item__vote">
+                                        <p class="item__vote--number">7.1</p>
+                                        <p class="item__vote--star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item__bot">
+                                    <div class="item__img">
+                                        <img src="./img/violet-garden-hoi-uc-khong-quen-violet-evergarden-the-movie-p-16061871900447_215x318.png"
+                                            alt="">
+                                        <div class="item__play">
+                                            <button type="button" class="slide--button" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <i class="fa fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                  <div class="item__title">
+                                    <div class="item__name">
+                                        <span style="padding: 0 16px;background-color: #00ac4d;">P</span>
+                                        <span>Violet Garden: Hồi Ức Không Quên(P)</span>
+                                        <div class="item--minute">140 phút</div>
+                                    </div>
+                                    
+                                    <div class="item__btn ">
+                                        <button class="w-100 btn--orange">
+                                            Đặt vé
+                                        </button>
+                                    </div>
+                                  </div>
+                                    <div class="item__vote">
+                                        <p class="item__vote--number">5.7</p>
+                                        <p class="item__vote--star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__top">
+                                    <div class="item__img">
+                                        <img src="./img/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="">
+                                        <div class="item__play">
+                                            <button type="button" class="slide--button" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <i class="fa fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item__title">
+                                        <div class="item__name">
+                                            <span>C18</span>
+                                            <span>Chồng Người Ta(C18)</span>
+                                            <div class="item--minute">90 phút</div>
+                                        </div>
+
+
+                                        <div class="item__btn ">
+                                            <button class="w-100 btn--orange">
+                                                Đặt vé
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item__vote">
+                                        <p class="item__vote--number">6.6</p>
+                                        <p class="item__vote--star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item__bot">
+                                    <div class="item__bot">
+                                        <div class="item__img">
+                                            <img src="./img/doi-do-tham-recon-c18-16068178585986_215x318.png" alt="">
+                                            <div class="item__play">
+                                                <button type="button" class="slide--button" data-toggle="modal"
+                                                    data-target="#exampleModal">
+                                                    <i class="fa fa-play"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                       <div class="item__title">
+                                        <div class="item__name">
+                                            <span>C18</span>
+                                            <span>Đôi Do Thám - Recon(C18)</span>
+                                            <div class="item--minute">95 phút</div>
+                                        </div>
+                                        
+                                        <div class="item__btn ">
+                                            <button class="w-100 btn--orange">
+                                                Đặt vé
+                                            </button>
+                                        </div>
+                                       </div>
+                                        <div class="item__vote">
+                                            <p class="item__vote--number">5.1</p>
+                                            <p class="item__vote--star">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__top">
+                                    <div class="item__img">
+                                        <img src="./img/me-bau-sieu-ngau-more-than-family-c16-16061881572886_215x318.png"
+                                            alt="">
+                                        <div class="item__play">
+                                            <button type="button" class="slide--button" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <i class="fa fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item__title">
+                                        <div class="item__name">
+                                            <span>C16</span>
+                                            <span>Mẹ Bầu Siêu Ngầu - More Than Family(C16)</span>
+                                            <div class="item--minute">100 phút</div>
+                                        </div>
+
+
+                                        <div class="item__btn ">
+                                            <button class="w-100 btn--orange">
+                                                Đặt vé
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item__vote">
+                                        <p class="item__vote--number">5.6</p>
+                                        <p class="item__vote--star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item__bot">
+                                    <div class="item__bot">
+                                        <div class="item__bot">
+                                            <div class="item__img">
+                                                <img src="./img/tron-chay-run-c18-16055828261006_215x318.png" alt="">
+                                                <div class="item__play">
+                                                    <button type="button" class="slide--button" data-toggle="modal"
+                                                        data-target="#exampleModal">
+                                                        <i class="fa fa-play"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="item__title">
+                                                <div class="item__name">
+                                                    <span>C18</span>
+                                                    <span>Trốn Chạy - Run(C18)</span>
+                                                    <div class="item--minute">90 phút</div>
+                                                </div>
+                                                
+                                                <div class="item__btn ">
+                                                    <button class="w-100 btn--orange">
+                                                        Đặt vé
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="item__vote">
+                                                <p class="item__vote--number">8.4</p>
+                                                <p class="item__vote--star">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__top">
+                                    <div class="item__img">
+                                        <img src="./img/quai-dan-freaky-c18-16061887808735_215x318.png" alt="">
+                                        <div class="item__play">
+                                            <button type="button" class="slide--button" data-toggle="modal"
+                                                data-target="#exampleModal">
+                                                <i class="fa fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item__title">
+                                        <div class="item__name">
+                                            <span>C18</span>
+                                            <span>Quái Đản - Freaky(C18)</span>
+                                            <div class="item--minute">102 phút</div>
+                                        </div>
+    
+                                        
+                                        <div class="item__btn ">
+                                            <button class="w-100 btn--orange">
+                                                Đặt vé
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item__vote">
+                                        <p class="item__vote--number">9.2</p>
+                                        <p class="item__vote--star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item__bot">
+                                    <div class="item__bot">
+                                        <div class="item__bot">
+                                            <div class="item__img">
+                                                <img src="./img/dau-si-toi-thuong-jiu-jitsu-c18-16055846429711_215x318.png"
+                                                    alt="">
+                                                <div class="item__play">
+                                                    <button type="button" class="slide--button" data-toggle="modal"
+                                                        data-target="#exampleModal">
+                                                        <i class="fa fa-play"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="item__title">
+                                                <div class="item__name">
+                                                    <span>C18</span>
+                                                    <span>Đấu Sĩ Tối Thượng - Jui Jitsu(C18)</span>
+                                                    <div class="item--minute">103 phút</div>
+                                                </div>
+
+                                                <div class="item__btn ">
+                                                    <button class="w-100 btn--orange">
+                                                        Đặt vé
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="item__vote">
+                                                <p class="item__vote--number">5.6</p>
+                                                <p class="item__vote--star">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="menu1" class="container tab-pane fade"><br>
+                        <h3>Menu 1</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <div class="order__body">
+            <div class="order__logo">
+                <div class="logo--img ">
+                    <img class="action" src="./img/logo_bhd.png" alt="">
+                </div>
+                <div class="logo--img">
+                    <img src="./img/logo__star.png" alt="">
+                </div>
+                <div class="logo--img">
+                    <img src="./img/logo__dongda.png" alt="">
+                </div>
+                <div class="logo--img">
+                    <img src="./img/mega.png" alt="">
+                </div>
+                <div class="logo--img">
+                    <img src="./img/logo__cine.jpg" alt="">
+                </div>
+                <div class="logo--img">
+                    <img src="./img/logo__lotte.png" alt="">
+                </div>
+            </div>
+            <div class="order__detail">
+                <div class="detail__body action">
+                    <div class="detail--img">
+                        <img src="./img/bhd-star-bitexco-15379552241200.jpg" alt="">
+                    </div>
+                    <div class="detail--text">
+                        <p><span>BHD Star</span> - Bitexco </p>
+                        <p>L3 - Bitexco Icon68, 2 Hải Triểu... </p>
+                        <p>[chi tiết]</p>
+                    </div>
+                </div>
+                <div class="detail__body">
+                    <div class="detail--img">
+                        <img src="./img/bhd-star-bitexco-15379552241200.jpg" alt="">
+                    </div>
+                    <div class="detail--text">
+                        <p><span>BHD Star</span> - Vincom Thảo Điền </p>
+                        <p>L5-Megamall, 159 XL Hà Nội, Q... </p>
+                        <p>[chi tiết]</p>
+                    </div>
+                </div>
+                <div class="detail__body">
+                    <div class="detail--img">
+                        <img src="./img/bhd-star-bitexco-15379552241200.jpg" alt="">
+                    </div>
+                    <div class="detail--text">
+                        <p><span>BHD Star</span> - Vincom 3/2 </p>
+                        <p>L5-Vincom 3/2, 3C Đường 3/2, Q... </p>
+                        <p>[chi tiết]</p>
+                    </div>
+                </div>
+                <div class="detail__body">
+                    <div class="detail--img">
+                        <img src="./img/bhd-star-bitexco-15379552241200.jpg" alt="">
+                    </div>
+                    <div class="detail--text">
+                        <p><span>BHD Star</span> - Phạm Hùng </p>
+                        <p>L4-Satra Phạm Hùng, C6/27 Phạ... </p>
+                        <p>[chi tiết]</p>
+                    </div>
+                </div>
+                <div class="detail__body">
+                    <div class="detail--img">
+                        <img src="./img/bhd-star-bitexco-15379552241200.jpg" alt="">
+                    </div>
+                    <div class="detail--text">
+                        <p><span>BHD Star</span> - Vincom Quang Trung </p>
+                        <p>B1-Vincom QT, 190 Quang Trung, ... </p>
+                        <p>[chi tiết]</p>
+                    </div>
+                </div>
+                <div class="detail__body">
+                    <div class="detail--img">
+                        <img src="./img/bhd-star-bitexco-15379552241200.jpg" alt="">
+                    </div>
+                    <div class="detail--text">
+                        <p><span>BHD Star</span> - Vincom Lê Văn Việt </p>
+                        <p>L4-Vincom Plaza, 50 Lê Văn Việ... </p>
+                        <p>[chi tiết]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="order__time">
+                <div class="time__body">
+                    <div class="time__body--title">
+                        <div class="time__body--img">
+                            <img src="./img/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_60x60.png" alt="">
+                        </div>
+                        <div class="time__body--text">
+                            <p><span>C16</span>Bí Mật Của Gió - Secrets of the Wind</p>
+                            <p>95 phút - TIX 7.4 - IMDb 0</p>
+                        </div>
+                    </div>
+                    <div class="time__body--detail">
+                        <h5>2D Digital</h5>
+                        <div class="time__body--list">
+                            <a href="#">
+                                <span>12:30</span>
+                                <span>~ 14:05</span>
+                            </a>
+                            <a href="#">
+                                <span>14:40</span>
+                                <span>~ 16:15</span>
+                            </a>
+                            <a href="#">
+                                <span>16:50</span>
+                                <span>~ 18:25</span>
+                            </a>
+                            <a href="#">
+                                <span>19:00</span>
+                                <span>~ 20:35</span>
+                            </a>
+                            <a href="#">
+                                <span>20:55</span>
+                                <span>~ 22:30</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="time__body">
+                    <div class="time__body--title">
+                        <div class="time__body--img">
+                            <img src="./img/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_60x60.png" alt="">
+                        </div>
+                        <div class="time__body--text">
+                            <p><span>C16</span>Bí Mật Của Gió - Secrets of the Wind</p>
+                            <p>95 phút - TIX 7.4 - IMDb 0</p>
+                        </div>
+                    </div>
+                    <div class="time__body--detail">
+                        <h5>2D Digital</h5>
+                        <div class="time__body--list">
+                            <a href="#">
+                                <span>12:30</span>
+                                <span>~ 14:05</span>
+                            </a>
+                            <a href="#">
+                                <span>14:40</span>
+                                <span>~ 16:15</span>
+                            </a>
+                            <a href="#">
+                                <span>16:50</span>
+                                <span>~ 18:25</span>
+                            </a>
+                            <a href="#">
+                                <span>19:00</span>
+                                <span>~ 20:35</span>
+                            </a>
+                            <a href="#">
+                                <span>20:55</span>
+                                <span>~ 22:30</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="time__body">
+                    <div class="time__body--title">
+                        <div class="time__body--img">
+                            <img src="./img/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_60x60.png" alt="">
+                        </div>
+                        <div class="time__body--text">
+                            <p><span>C16</span>Bí Mật Của Gió - Secrets of the Wind</p>
+                            <p>95 phút - TIX 7.4 - IMDb 0</p>
+                        </div>
+                    </div>
+                    <div class="time__body--detail">
+                        <h5>2D Digital</h5>
+                        <div class="time__body--list">
+                            <a href="#">
+                                <span>12:30</span>
+                                <span>~ 14:05</span>
+                            </a>
+                            <a href="#">
+                                <span>14:40</span>
+                                <span>~ 16:15</span>
+                            </a>
+                            <a href="#">
+                                <span>16:50</span>
+                                <span>~ 18:25</span>
+                            </a>
+                            <a href="#">
+                                <span>19:00</span>
+                                <span>~ 20:35</span>
+                            </a>
+                            <a href="#">
+                                <span>20:55</span>
+                                <span>~ 22:30</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="time__body">
+                    <div class="time__body--title">
+                        <div class="time__body--img">
+                            <img src="./img/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_60x60.png" alt="">
+                        </div>
+                        <div class="time__body--text">
+                            <p><span>C16</span>Bí Mật Của Gió - Secrets of the Wind</p>
+                            <p>95 phút - TIX 7.4 - IMDb 0</p>
+                        </div>
+                    </div>
+                    <div class="time__body--detail">
+                        <h5>2D Digital</h5>
+                        <div class="time__body--list">
+                            <a href="#">
+                                <span>12:30</span>
+                                <span>~ 14:05</span>
+                            </a>
+                            <a href="#">
+                                <span>14:40</span>
+                                <span>~ 16:15</span>
+                            </a>
+                            <a href="#">
+                                <span>16:50</span>
+                                <span>~ 18:25</span>
+                            </a>
+                            <a href="#">
+                                <span>19:00</span>
+                                <span>~ 20:35</span>
+                            </a>
+                            <a href="#">
+                                <span>20:55</span>
+                                <span>~ 22:30</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" >
+        
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- click slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            speed: 600,
+            slidesPerView: 1,
+            spaceBetween: 100,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!-- carousel -->
+    <script src="jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: false,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

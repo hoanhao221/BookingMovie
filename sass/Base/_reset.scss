@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'SF Text Regular';
+    font-size: $fs-1;
+    color: $cl-black-1;
+    line-height: $line;
+    background-color: $cl-white-0;
+}
